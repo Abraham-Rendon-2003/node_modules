@@ -1,0 +1,62 @@
+{
+  "hash": "f81880c8",
+  "browserHash": "c5593ce4",
+  "optimized": {
+    "vue": {
+      "src": "../../vue/dist/vue.runtime.esm.js",
+      "file": "vue.js",
+      "fileHash": "a3f1bb71",
+      "needsInterop": false
+    },
+    "pinia": {
+      "src": "../../pinia/dist/pinia.mjs",
+      "file": "pinia.js",
+      "fileHash": "ccff6e3f",
+      "needsInterop": false
+    },
+    "vue-sweetalert2": {
+      "src": "../../vue-sweetalert2/dist/vue-sweetalert.es.js",
+      "file": "vue-sweetalert2.js",
+      "fileHash": "87b8d0cf",
+      "needsInterop": false
+    },
+    "vuejs-noty": {
+      "src": "../../vuejs-noty/dist/vuejs-noty.js",
+      "file": "vuejs-noty.js",
+      "fileHash": "d042c691",
+      "needsInterop": true
+    },
+    "vue-router": {
+      "src": "../../vue-router/dist/vue-router.esm.js",
+      "file": "vue-router.js",
+      "fileHash": "c91cbe0e",
+      "needsInterop": false
+    },
+    "vuetify": {
+      "src": "../../vuetify/dist/vuetify.js",
+      "file": "vuetify.js",
+      "fileHash": "f5af348d",
+      "needsInterop": true
+    },
+    "moment": {
+      "src": "../../moment/dist/moment.js",
+      "file": "moment.js",
+      "fileHash": "93b88871",
+      "needsInterop": true
+    },
+    "axios": {
+      "src": "../../axios/index.js",
+      "file": "axios.js",
+      "fileHash": "1937132c",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-RBEYXVQ7": {
+      "file": "chunk-RBEYXVQ7.js"
+    },
+    "chunk-OROXOI2D": {
+      "file": "chunk-OROXOI2D.js"
+    }
+  }
+}

@@ -1,0 +1,127 @@
+<template>
+  <div class="landing-page">
+    <div class="carousel-container animate__animated animate__fadeInLeft">
+      <v-carousel cycle>
+        <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" reverse-transition="fade-transition"
+          transition="fade-transition"></v-carousel-item>
+      </v-carousel>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="container mx-auto text-center mt-3">
+        <h2 class="text-3xl font-bold mb-4 text-white">Bienvenido a Warehouse</h2>
+        <p class="text-lg mb-6 text-white">Tu tienda en línea con el mejor servicio de paquetería.</p>
+        <v-divider class="mb-6"></v-divider>
+        <p class="text-lg text-white">Descubre una amplia variedad de productos y disfruta de nuestro servicio de entrega rápida y segura.</p>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="bg-gray-900 py-6">
+        <div class="container mx-auto text-center">s
+          <h3 class="text-2xl font-semibold mb-4 text-white">¡Únete a Warehouse hoy mismo!</h3>
+          <p class="text-lg mb-6 text-white">Regístrate ahora para acceder a los mejores productos y ofertas especiales.</p>
+          <v-btn href="/home/registro" class="mr-4">
+            Registrarse
+          </v-btn>
+          <v-btn href="/home/login" outlined class="primary--text">
+            Iniciar Sesión
+          </v-btn>
+        </div>
+      </div>
+
+      <!-- Testimonials Section -->
+      <div class="container mx-auto py-12">
+        <div class="text-center">
+          <h3 class="text-3xl font-bold mb-4 text-white">Lo que nuestros clientes dicen</h3>
+          <v-divider class="mb-6"></v-divider>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testimonial Card -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <p class="text-lg mb-4">"Warehouse tiene una increíble variedad de productos y su servicio de entrega es rápido y confiable."</p>
+              <p class="font-semibold">- María Sánchez</p>
+            </div>
+            <!-- Testimonial Card -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <p class="text-lg mb-4">"¡Excelente servicio! Encontré todo lo que necesitaba y la entrega fue muy rápida."</p>
+              <p class="font-semibold">- Juan Pérez</p>
+            </div>
+            <!-- Testimonial Card -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <p class="text-lg mb-4">"La experiencia de compra en Warehouse es excepcional. ¡Muy recomendado!"</p>
+              <p class="font-semibold">- Ana Martínez</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+      <div class="container mx-auto text-center text-white">
+        <p class="text-lg font-semibold">Información de contacto:</p>
+        <p class="mt-2">Dirección: Av. Plan de Ayala 123, Cuernavaca, Morelos</p>
+        <p>Teléfono: (123) 456-7890</p>
+        <p>Email: contacto@warehouse.com</p>
+      </div>
+    </footer>
+    </div>
+  </div>
+</template>
+
+<script>
+import banquete1 from '@/assets/images/paqueteria/landingimg1.jpg';
+import banquete2 from '@/assets/images/paqueteria/landingimg2.jpg';
+import banquete3 from '@/assets/images/paqueteria/landingimg3.jpg';
+import banquete4 from '@/assets/images/paqueteria/landingimg4.jpg';
+import banquete5 from '@/assets/images/paqueteria/landingimg5.jpg';
+
+export default {
+  name: 'LandingPage',
+  data() {
+    return {
+      items: [
+        { src: banquete1 },
+        { src: banquete2 },
+        { src: banquete3 },
+        { src: banquete4 },
+        { src: banquete5 },
+      ],
+    };
+  },
+};
+</script>
+
+<style scoped>
+.carousel-container {
+  width: 100%;
+  
+}
+.landing-page {
+  /* Fondo con degradado */
+  background: linear-gradient(135deg, #161b22, #03071E);
+  /* Animación de movimiento */
+  animation: gradientAnimation 10s linear infinite alternate;
+}
+.footer {
+  background-color: #333; /* Color de fondo */
+  color: #fff; /* Color de texto */
+  padding: 20px; /* Espaciado interno */
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer .font-semibold {
+  font-weight: 600; 
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+</style>
